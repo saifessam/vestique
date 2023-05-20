@@ -1,0 +1,26 @@
+.button {
+  padding: var(--half-spacing) var(--full-spacing);
+  border-radius: var(--circular-border-radius);
+  font: var(--button-font);
+  color: var(--background-primary);
+  cursor: pointer;
+}
+
+.button[data-style='PRIMARY'] {
+  background-color: var(--accent-primary);
+}
+
+.button[data-style='PRIMARY']:hover {
+  background-color: var(--accent-secondary);
+}
+
+.button[data-style='SECONDARY'] {
+  background-color: transparent;
+  border: thin solid var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.button[data-style='SECONDARY']:hover {
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+}
